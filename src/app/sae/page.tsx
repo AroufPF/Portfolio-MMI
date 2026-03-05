@@ -110,7 +110,7 @@ export default function SaeLog() {
                   className="w-full h-full relative z-0 grayscale group-hover/vid:grayscale-0 transition-all duration-700"
                   /* 👇 METS TON ID YOUTUBE ICI 👇 */
                   src="https://www.youtube.com/embed/hbRmWnpxcZc?si=ruy_YTdDF0stE3Gq"
-                  title="Teaser SAE"
+                  title="Trailer SAE"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
