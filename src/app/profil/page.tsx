@@ -38,7 +38,7 @@ export default function GenericDataLog() {
               Qui suis-je ?
             </h1>
             <p className="text-slate-400 font-mono text-sm mt-2 font-medium">
-              Benhaddane Anas.
+              Benhaddane Anas, 20 ans, Franco-Marocain, Réside à Paris.
             </p>
           </div>
         </div>

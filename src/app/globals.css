@@ -16,6 +16,14 @@
     opacity: 0;
   }
 }
+html {
+  /* On augmente la base de 16px à 18px pour que tout le site suive */
+  font-size: 32px;
+}
+
+body {
+  line-height: 1.6; /* On donne un peu plus d'air entre les lignes */
+}
 
 .cyber-scan {
   position: fixed;

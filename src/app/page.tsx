@@ -136,7 +136,7 @@ export default function Dashboard() {
               className="group/item flex justify-between items-center cursor-pointer hover:text-cyan-400 border-b border-slate-800 pb-3 transition-colors"
             >
               <span className="text-white group-hover/item:text-cyan-400">
-                Développement SPA (SAE)
+                Projets Scolaire (SAE)
               </span>
               <span className="text-slate-600 group-hover/item:text-cyan-500">
                 &rarr;

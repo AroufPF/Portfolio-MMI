@@ -89,21 +89,32 @@ export default function SaeLog() {
             </span>
           </a>
 
-          {/* TEASER MP4 */}
-          <div className="relative">
-            <div className="absolute -top-3 left-4 bg-slate-900 border border-slate-700 px-2 text-xs font-mono text-cyan-400 z-10 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 bg-red-500 animate-pulse rounded-full" />{" "}
-              DÉMONSTRATION VIDÉO : TEASER
+          {/* 📺 LE MONITEUR YOUTUBE (SAE TEASER) */}
+          <div className="relative mt-12">
+            {/* Voyant d'enregistrement clignotant */}
+            <div className="absolute -top-3 left-4 bg-slate-900 border border-slate-700 px-3 py-1 text-[0.7rem] font-mono text-cyan-400 z-10 flex items-center gap-2">
+              <span className="w-2 h-2 bg-red-600 animate-pulse rounded-full shadow-[0_0_8px_rgba(220,38,38,0.8)]" />
+              FEED_LIVE : DÉMONSTRATION_SAE
             </div>
-            <div className="w-full aspect-video border border-slate-700 p-1 bg-slate-950 shadow-lg relative">
-              <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-cyan-500 z-20 pointer-events-none" />
-              <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-cyan-500 z-20 pointer-events-none" />
-              <video
-                controls
-                className="w-full h-full object-cover bg-black relative z-10 outline-none"
-              >
-                <source src="/Dive_Teaser.mp4" type="video/mp4" />
-              </video>
+
+            <div className="w-full aspect-video border border-slate-800 p-1 bg-slate-950 shadow-2xl relative group/vid">
+              {/* Angles de visée Cyberlife */}
+              <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-cyan-500 z-20 pointer-events-none opacity-50" />
+              <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-cyan-500 z-20 pointer-events-none opacity-50" />
+
+              <div className="w-full h-full relative overflow-hidden bg-black">
+                {/* Overlay de scan au survol */}
+                <div className="absolute inset-0 bg-cyan-500/10 opacity-0 group-hover/vid:opacity-100 transition-opacity z-10 pointer-events-none mix-blend-overlay" />
+
+                <iframe
+                  className="w-full h-full relative z-0 grayscale group-hover/vid:grayscale-0 transition-all duration-700"
+                  /* 👇 METS TON ID YOUTUBE ICI 👇 */
+                  src="https://www.youtube.com/embed/hbRmWnpxcZc?si=ruy_YTdDF0stE3Gq"
+                  title="Teaser SAE"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </section>
