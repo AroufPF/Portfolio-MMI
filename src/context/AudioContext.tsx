@@ -26,11 +26,11 @@ export const AudioProvider = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => {
     const hoverSound = new Howl({
-      src: ["/sounds/ui-hover-tic.mp3"],
+      src: ["/sounds/ui-hover-tic.wav"],
       volume: 0.1,
     });
     const clickSound = new Howl({
-      src: ["/sounds/ui-click-mech.mp3"],
+      src: ["/sounds/ui-click-mech.wav"],
       volume: 0.3,
     });
     // Utiliser un micro-task pour éviter le setState synchrone
