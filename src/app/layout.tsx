@@ -1,3 +1,4 @@
+import "./globals.css";
 import { AudioProvider } from "../context/AudioContext";
 
 export default function RootLayout({

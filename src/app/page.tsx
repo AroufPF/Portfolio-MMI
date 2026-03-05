@@ -1,5 +1,6 @@
 import { SysButton } from "../components/ui/SysButton";
 import { Terminal, Database, Cpu } from "lucide-react";
+import { AudioToggle } from "../components/ui/AudioToggle";
 
 export default function Dashboard() {
   return (
@@ -12,7 +13,17 @@ export default function Dashboard() {
             <span className="w-2 h-2 rounded-full bg-cyan-500 animate-pulse"></span>
             SYS.ONLINE
           </span>
-          {/* Le bouton pour activer le contexte audio ira ici */}
+          {
+            <div className="flex items-center gap-4">
+              <span className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-cyan-500 animate-pulse"></span>
+                SYS.ONLINE
+              </span>
+
+              {/* LE BOUTON AUDIO EST BRANCHÉ ICI */}
+              <AudioToggle />
+            </div>
+          }
         </div>
       </header>
 
