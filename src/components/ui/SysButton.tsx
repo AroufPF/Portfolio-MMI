@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { useAudio } from "../../hooks/useAudio";
+import { useAudio } from "../../context/AudioContext";
 
 interface SysButtonProps {
   href?: string;
